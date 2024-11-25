@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaNodeJs, FaSass, FaDocker } from 'react-icons/fa';
+import { SiTypescript, SiMongodb, SiExpress, SiGraphql, SiNextdotjs } from 'react-icons/si';
 
 const Skills = () => {
   return (
@@ -108,6 +109,71 @@ const Skills = () => {
               <FaDocker />
             </div>
             <h4 className="text-xl font-semibold mt-4">Docker</h4>
+          </motion.div>
+
+          {/* Skill 8 - TypeScript */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.4 }}
+          >
+            <div className="text-4xl text-blue-500">
+              <SiTypescript />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">TypeScript</h4>
+          </motion.div>
+
+          {/* Skill 9 - MongoDB */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.6 }}
+          >
+            <div className="text-4xl text-green-700">
+              <SiMongodb />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">MongoDB</h4>
+          </motion.div>
+
+          {/* Skill 10 - Express.js */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.8 }}
+          >
+            <div className="text-4xl text-gray-800">
+              <SiExpress />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">Express.js</h4>
+          </motion.div>
+
+          {/* Skill 11 - GraphQL */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2 }}
+          >
+            <div className="text-4xl text-purple-600">
+              <SiGraphql />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">GraphQL</h4>
+          </motion.div>
+
+          {/* Skill 12 - Next.js */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2.2 }}
+          >
+            <div className="text-4xl text-black">
+              <SiNextdotjs />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">Next.js</h4>
           </motion.div>
         </div>
       </div>
