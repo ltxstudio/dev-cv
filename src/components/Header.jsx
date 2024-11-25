@@ -45,7 +45,7 @@ const Header = () => {
         {/* Call-to-Action Button */}
         <motion.a
           href="#contact"
-          className="mt-6 inline-block px-6 py-3 bg-yellow-500 text-gray-800 font-semibold text-lg rounded-lg shadow-md hover:bg-yellow-400 transform hover:scale-105 transition duration-300"
+          className="mt-6 inline-block px-8 py-4 bg-yellow-500 text-gray-800 font-semibold text-lg rounded-lg shadow-lg transform hover:scale-110 hover:bg-yellow-400 transition duration-300"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.7 }}
@@ -59,7 +59,7 @@ const Header = () => {
             href="https://www.linkedin.com/in/johndoe"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl sm:text-4xl hover:text-blue-300 transition duration-300"
+            className="text-4xl sm:text-5xl hover:text-blue-300 transition duration-300 transform hover:scale-125"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
@@ -71,7 +71,7 @@ const Header = () => {
             href="https://github.com/johndoe"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl sm:text-4xl hover:text-gray-300 transition duration-300"
+            className="text-4xl sm:text-5xl hover:text-gray-300 transition duration-300 transform hover:scale-125"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
@@ -81,7 +81,7 @@ const Header = () => {
 
           <motion.a
             href="mailto:johndoe@example.com"
-            className="text-3xl sm:text-4xl hover:text-yellow-400 transition duration-300"
+            className="text-4xl sm:text-5xl hover:text-yellow-400 transition duration-300 transform hover:scale-125"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.4 }}
