@@ -1,13 +1,31 @@
 import { useForm } from 'react-hook-form';
 import { FaUser, FaEnvelope, FaCommentDots } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
-    // Send the form data to an API or email service
+    
+    // Send the form data to EmailJS
+    emailjs.send(
+      'your_service_id', // Your EmailJS service ID
+      'your_template_id', // Your EmailJS template ID
+      data,
+      'your_user_id' // Your EmailJS user ID
+    )
+    .then(
+      (response) => {
+        console.log('Message sent successfully:', response);
+        // Optional: You can show a success message or clear the form here
+      },
+      (error) => {
+        console.error('Error sending message:', error);
+        // Optional: Show an error message here
+      }
+    );
   };
 
   return (
