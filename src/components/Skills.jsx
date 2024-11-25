@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaNodeJs, FaSass, FaDocker } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiExpress, SiGraphql, SiNextdotjs, SiRedux, SiTailwindcss, SiJest, SiPostgresql } from 'react-icons/si';
+import { SiTypescript, SiMongodb, SiExpress, SiGraphql, SiNextdotjs, SiRedux, SiTailwindcss, SiJest, SiPostgresql, SiVite, SiFigma, SiKubernetes, SiAdobe, SiHeroku, SiStorybook, SiWebpack, SiFlutter, SiPhp, SiPython } from 'react-icons/si';
 
 const Skills = () => {
   return (
@@ -20,6 +20,8 @@ const Skills = () => {
 
         {/* Skills Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 mt-8 text-center">
+          
+          {/* Existing Skills */}
           {/* Skill 1 - React */}
           <motion.div
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
@@ -150,83 +152,138 @@ const Skills = () => {
             <h4 className="text-xl font-semibold mt-4">Express.js</h4>
           </motion.div>
 
-          {/* Skill 11 - GraphQL */}
+          {/* Adding 10 New Skills */}
+
+          {/* Skill 11 - Vite */}
           <motion.div
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}
           >
-            <div className="text-4xl text-purple-600">
-              <SiGraphql />
+            <div className="text-4xl text-yellow-500">
+              <SiVite />
             </div>
-            <h4 className="text-xl font-semibold mt-4">GraphQL</h4>
+            <h4 className="text-xl font-semibold mt-4">Vite</h4>
           </motion.div>
 
-          {/* Skill 12 - Next.js */}
+          {/* Skill 12 - Figma */}
           <motion.div
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2.2 }}
           >
-            <div className="text-4xl text-black">
-              <SiNextdotjs />
+            <div className="text-4xl text-purple-600">
+              <SiFigma />
             </div>
-            <h4 className="text-xl font-semibold mt-4">Next.js</h4>
+            <h4 className="text-xl font-semibold mt-4">Figma</h4>
           </motion.div>
 
-          {/* Skill 13 - Redux */}
+          {/* Skill 13 - Kubernetes */}
           <motion.div
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2.4 }}
           >
-            <div className="text-4xl text-purple-700">
-              <SiRedux />
+            <div className="text-4xl text-blue-400">
+              <SiKubernetes />
             </div>
-            <h4 className="text-xl font-semibold mt-4">Redux</h4>
+            <h4 className="text-xl font-semibold mt-4">Kubernetes</h4>
           </motion.div>
 
-          {/* Skill 14 - TailwindCSS */}
+          {/* Skill 14 - Adobe XD */}
           <motion.div
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2.6 }}
           >
-            <div className="text-4xl text-teal-500">
-              <SiTailwindcss />
+            <div className="text-4xl text-red-600">
+              <SiAdobe />
             </div>
-            <h4 className="text-xl font-semibold mt-4">Tailwind CSS</h4>
+            <h4 className="text-xl font-semibold mt-4">Adobe XD</h4>
           </motion.div>
 
-          {/* Skill 15 - Jest */}
+          {/* Skill 15 - Heroku */}
           <motion.div
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2.8 }}
           >
-            <div className="text-4xl text-green-500">
-              <SiJest />
+            <div className="text-4xl text-indigo-600">
+              <SiHeroku />
             </div>
-            <h4 className="text-xl font-semibold mt-4">Jest</h4>
+            <h4 className="text-xl font-semibold mt-4">Heroku</h4>
           </motion.div>
 
-          {/* Skill 16 - PostgreSQL */}
+          {/* Skill 16 - Storybook */}
           <motion.div
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 3 }}
           >
-            <div className="text-4xl text-blue-500">
-              <SiPostgresql />
+            <div className="text-4xl text-teal-400">
+              <SiStorybook />
             </div>
-            <h4 className="text-xl font-semibold mt-4">PostgreSQL</h4>
+            <h4 className="text-xl font-semibold mt-4">Storybook</h4>
           </motion.div>
+
+          {/* Skill 17 - Webpack */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 3.2 }}
+          >
+            <div className="text-4xl text-gray-600">
+              <SiWebpack />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">Webpack</h4>
+          </motion.div>
+
+          {/* Skill 18 - Flutter */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 3.4 }}
+          >
+            <div className="text-4xl text-indigo-500">
+              <SiFlutter />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">Flutter</h4>
+          </motion.div>
+
+          {/* Skill 19 - PHP */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 3.6 }}
+          >
+            <div className="text-4xl text-blue-500">
+              <SiPhp />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">PHP</h4>
+          </motion.div>
+
+          {/* Skill 20 - Python */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 3.8 }}
+          >
+            <div className="text-4xl text-yellow-500">
+              <SiPython />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">Python</h4>
+          </motion.div>
+
         </div>
       </div>
     </section>
