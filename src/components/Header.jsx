@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className="text-center py-16 bg-gradient-to-r from-teal-500 via-blue-500 to-indigo-600 text-white">
+    <header className="text-center py-16 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-white">
       {/* Header content container */}
       <div className="container mx-auto px-4">
         
@@ -24,7 +24,7 @@ const Header = () => {
 
         {/* Name */}
         <motion.h1
-          className="text-4xl sm:text-5xl font-extrabold leading-tight text-gray-900"
+          className="text-4xl sm:text-5xl font-extrabold leading-tight"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -34,7 +34,7 @@ const Header = () => {
 
         {/* Role */}
         <motion.p
-          className="text-xl mt-2 sm:text-2xl font-semibold text-gray-300"
+          className="text-xl mt-2 sm:text-2xl font-semibold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -45,7 +45,7 @@ const Header = () => {
         {/* Call-to-Action Button */}
         <motion.a
           href="#contact"
-          className="mt-6 inline-block px-8 py-4 bg-indigo-600 text-white font-semibold text-lg rounded-lg shadow-lg transform hover:scale-110 hover:bg-indigo-500 transition duration-300"
+          className="mt-6 inline-block px-8 py-4 bg-yellow-500 text-gray-800 font-semibold text-lg rounded-lg shadow-lg transform hover:scale-110 hover:bg-yellow-400 transition duration-300"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.7 }}
@@ -59,7 +59,7 @@ const Header = () => {
             href="https://www.linkedin.com/in/johndoe"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-4xl sm:text-5xl text-blue-500 hover:text-blue-300 transition duration-300 transform hover:scale-125"
+            className="text-4xl sm:text-5xl hover:text-blue-300 transition duration-300 transform hover:scale-125"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
@@ -71,7 +71,7 @@ const Header = () => {
             href="https://github.com/johndoe"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-4xl sm:text-5xl text-gray-800 hover:text-gray-600 transition duration-300 transform hover:scale-125"
+            className="text-4xl sm:text-5xl hover:text-gray-300 transition duration-300 transform hover:scale-125"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
@@ -81,7 +81,7 @@ const Header = () => {
 
           <motion.a
             href="mailto:johndoe@example.com"
-            className="text-4xl sm:text-5xl text-yellow-400 hover:text-yellow-300 transition duration-300 transform hover:scale-125"
+            className="text-4xl sm:text-5xl hover:text-yellow-400 transition duration-300 transform hover:scale-125"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.4 }}
