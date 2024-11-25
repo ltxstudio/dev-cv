@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <section className="py-16 bg-gradient-to-r from-indigo-100 via-purple-100 to-indigo-200">
       <div className="container mx-auto px-6 md:px-12">
-        
+
         {/* Section Title */}
         <motion.h2
           className="text-3xl sm:text-4xl font-semibold text-center text-gray-900"
@@ -18,7 +18,7 @@ const Experience = () => {
         </motion.h2>
 
         {/* Experience Cards */}
-        <div className="mt-10 space-y-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Job 1 */}
           <motion.div
             className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all transform hover:scale-105"
@@ -28,11 +28,11 @@ const Experience = () => {
           >
             <div className="flex items-center space-x-4">
               {/* Company Logo */}
-              <div className="w-12 h-12 bg-blue-600 text-white flex items-center justify-center rounded-full">
-                <FaReact size={24} />
+              <div className="w-16 h-16 bg-blue-600 text-white flex items-center justify-center rounded-full shadow-lg">
+                <FaReact size={28} />
               </div>
               <div>
-                <h3 className="text-2xl font-semibold">Frontend Developer - Company XYZ</h3>
+                <h3 className="text-2xl font-semibold text-gray-900">Frontend Developer - Company XYZ</h3>
                 <p className="text-gray-600">2022 - Present</p>
               </div>
             </div>
@@ -52,11 +52,11 @@ const Experience = () => {
           >
             <div className="flex items-center space-x-4">
               {/* Company Logo */}
-              <div className="w-12 h-12 bg-green-600 text-white flex items-center justify-center rounded-full">
-                <FaNodeJs size={24} />
+              <div className="w-16 h-16 bg-green-600 text-white flex items-center justify-center rounded-full shadow-lg">
+                <FaNodeJs size={28} />
               </div>
               <div>
-                <h3 className="text-2xl font-semibold">Backend Developer - Company ABC</h3>
+                <h3 className="text-2xl font-semibold text-gray-900">Backend Developer - Company ABC</h3>
                 <p className="text-gray-600">2020 - 2022</p>
               </div>
             </div>
@@ -76,11 +76,11 @@ const Experience = () => {
           >
             <div className="flex items-center space-x-4">
               {/* Company Logo */}
-              <div className="w-12 h-12 bg-purple-600 text-white flex items-center justify-center rounded-full">
-                <FaGitAlt size={24} />
+              <div className="w-16 h-16 bg-purple-600 text-white flex items-center justify-center rounded-full shadow-lg">
+                <FaGitAlt size={28} />
               </div>
               <div>
-                <h3 className="text-2xl font-semibold">Full Stack Developer - Company 123</h3>
+                <h3 className="text-2xl font-semibold text-gray-900">Full Stack Developer - Company 123</h3>
                 <p className="text-gray-600">2018 - 2020</p>
               </div>
             </div>
