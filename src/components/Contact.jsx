@@ -1,5 +1,4 @@
 import { useForm } from 'react-hook-form';
-import { FaUser, FaEnvelope, FaCommentDots } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
@@ -19,7 +18,7 @@ const Contact = () => {
     .then(
       (response) => {
         console.log('Message sent successfully:', response);
-        // Optional: You can show a success message or clear the form here
+        // Optional: Show a success message or clear the form here
       },
       (error) => {
         console.error('Error sending message:', error);
@@ -36,9 +35,24 @@ const Contact = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        Contact
+        Contact Us
       </motion.h2>
 
+      {/* Contact Information */}
+      <div className="mt-8 text-center">
+        <p className="text-lg text-gray-700">We would love to hear from you! Please fill out the form below or contact us directly at:</p>
+        
+        <div className="mt-4 text-gray-800">
+          <p className="text-xl font-semibold">Our Address:</p>
+          <p>1234 Street Name, City, State, 12345</p>
+          <p className="mt-2 text-xl font-semibold">Phone:</p>
+          <p>(123) 456-7890</p>
+          <p className="mt-2 text-xl font-semibold">Email:</p>
+          <p>contact@example.com</p>
+        </div>
+      </div>
+
+      {/* Contact Form */}
       <form 
         onSubmit={handleSubmit(onSubmit)} 
         className="mt-8 max-w-3xl mx-auto p-8 bg-white rounded-lg shadow-xl space-y-6"
@@ -46,61 +60,52 @@ const Contact = () => {
         
         {/* Name Input */}
         <motion.div
-          className="flex items-center space-x-3"
+          className="flex flex-col"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <FaUser className="text-gray-500 text-xl" />
-          <div className="flex-1">
-            <label className="block text-lg font-semibold text-gray-700">Name</label>
-            <input 
-              {...register('name', { required: 'Name is required' })} 
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-              type="text"
-              placeholder="Your name"
-            />
-            {errors.name && <p className="text-red-500 text-sm mt-2">{errors.name.message}</p>}
-          </div>
+          <label className="block text-lg font-semibold text-gray-700">Name</label>
+          <input 
+            {...register('name', { required: 'Name is required' })} 
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+            type="text"
+            placeholder="Your name"
+          />
+          {errors.name && <p className="text-red-500 text-sm mt-2">{errors.name.message}</p>}
         </motion.div>
         
         {/* Email Input */}
         <motion.div
-          className="flex items-center space-x-3"
+          className="flex flex-col"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <FaEnvelope className="text-gray-500 text-xl" />
-          <div className="flex-1">
-            <label className="block text-lg font-semibold text-gray-700">Email</label>
-            <input 
-              {...register('email', { required: 'Email is required' })} 
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-              type="email"
-              placeholder="Your email"
-            />
-            {errors.email && <p className="text-red-500 text-sm mt-2">{errors.email.message}</p>}
-          </div>
+          <label className="block text-lg font-semibold text-gray-700">Email</label>
+          <input 
+            {...register('email', { required: 'Email is required' })} 
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+            type="email"
+            placeholder="Your email"
+          />
+          {errors.email && <p className="text-red-500 text-sm mt-2">{errors.email.message}</p>}
         </motion.div>
         
         {/* Message Input */}
         <motion.div
-          className="flex items-center space-x-3"
+          className="flex flex-col"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          <FaCommentDots className="text-gray-500 text-xl" />
-          <div className="flex-1">
-            <label className="block text-lg font-semibold text-gray-700">Message</label>
-            <textarea 
-              {...register('message', { required: 'Message is required' })} 
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-              placeholder="Your message"
-            ></textarea>
-            {errors.message && <p className="text-red-500 text-sm mt-2">{errors.message.message}</p>}
-          </div>
+          <label className="block text-lg font-semibold text-gray-700">Message</label>
+          <textarea 
+            {...register('message', { required: 'Message is required' })} 
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+            placeholder="Your message"
+          ></textarea>
+          {errors.message && <p className="text-red-500 text-sm mt-2">{errors.message.message}</p>}
         </motion.div>
         
         {/* Submit Button */}
