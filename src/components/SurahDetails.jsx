@@ -6,12 +6,17 @@ import axios from "axios";
 function SurahDetails() {
   const { selectedSurah, setSelectedSurah, translationLang, toggleBookmark } = useAppContext();
   const [verses, setVerses] = useState([]);
+  const [tafsir, setTafsir] = useState("");
 
   useEffect(() => {
     if (selectedSurah) {
       axios
         .get(`https://api.quran.com/api/v4/quran/verses/${translationLang}?chapter_number=${selectedSurah.id}`)
         .then((response) => setVerses(response.data.verses));
+
+      axios
+        .get(`https://api.quran.com/api/v4/tafsirs?chapter_number=${selectedSurah.id}`)
+        .then((response) => setTafsir(response.data.tafsir || "Tafsir not available"));
     }
   }, [selectedSurah, translationLang]);
 
@@ -30,7 +35,7 @@ function SurahDetails() {
             <p className="text-sm text-gray-600">{verse.translations[0]?.text}</p>
             <button
               className="text-teal-500 mt-2"
-              onClick={() => toggleBookmark(verse)}
+              onClick={() => toggleBookmark({ id: verse.id, text: verse.translations[0]?.text, surah_name: selectedSurah.name_simple })}
             >
               Bookmark
             </button>
@@ -38,6 +43,10 @@ function SurahDetails() {
         ))}
       </div>
       <AudioPlayer audioUrl={`https://verses.quran.com/${selectedSurah.id}.mp3`} />
+      <div className="mt-4 p-4 bg-gray-100 rounded shadow">
+        <h3 className="text-lg font-bold">Tafsir</h3>
+        <p>{tafsir}</p>
+      </div>
     </div>
   );
 }
