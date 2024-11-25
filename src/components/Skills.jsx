@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaNodeJs, FaSass, FaDocker } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiExpress, SiGraphql, SiNextdotjs } from 'react-icons/si';
+import { SiTypescript, SiMongodb, SiExpress, SiGraphql, SiNextdotjs, SiRedux, SiTailwindcss, SiJest, SiPostgresql } from 'react-icons/si';
 
 const Skills = () => {
   return (
@@ -19,7 +19,7 @@ const Skills = () => {
         </motion.h2>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-8 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 mt-8 text-center">
           {/* Skill 1 - React */}
           <motion.div
             className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
@@ -174,6 +174,58 @@ const Skills = () => {
               <SiNextdotjs />
             </div>
             <h4 className="text-xl font-semibold mt-4">Next.js</h4>
+          </motion.div>
+
+          {/* Skill 13 - Redux */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2.4 }}
+          >
+            <div className="text-4xl text-purple-700">
+              <SiRedux />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">Redux</h4>
+          </motion.div>
+
+          {/* Skill 14 - TailwindCSS */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2.6 }}
+          >
+            <div className="text-4xl text-teal-500">
+              <SiTailwindcss />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">Tailwind CSS</h4>
+          </motion.div>
+
+          {/* Skill 15 - Jest */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2.8 }}
+          >
+            <div className="text-4xl text-green-500">
+              <SiJest />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">Jest</h4>
+          </motion.div>
+
+          {/* Skill 16 - PostgreSQL */}
+          <motion.div
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 3 }}
+          >
+            <div className="text-4xl text-blue-500">
+              <SiPostgresql />
+            </div>
+            <h4 className="text-xl font-semibold mt-4">PostgreSQL</h4>
           </motion.div>
         </div>
       </div>
