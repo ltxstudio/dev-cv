@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaNodeJs, FaSass, FaDocker } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiExpress, SiGraphql, SiNextdotjs, SiRedux, SiTailwindcss, SiJest, SiPostgresql, SiVite, SiFigma, SiKubernetes, SiAdobe, SiHeroku, SiStorybook, SiWebpack, SiFlutter, SiPhp, SiPython, SiCloudflare, SiNetlify, SiSvelte, SiRust, SiGo, SiGraphql, SiBitbucket, SiDigitalocean, SiAzure, SiJira, SiCircleci, SiTravisci } from 'react-icons/si';
+import { SiTypescript, SiMongodb, SiExpress, SiGraphql, SiNextdotjs, SiRedux, SiTailwindcss, SiJest, SiPostgresql, SiVite, SiFigma, SiKubernetes, SiAdobe, SiHeroku, SiStorybook, SiWebpack, SiFlutter, SiPhp, SiPython, SiCloudflare, SiNetlify, SiSvelte, SiRust, SiGo, SiBitbucket, SiDigitalocean, SiAzure, SiJira, SiCircleci, SiTravisci } from 'react-icons/si';
 
 const Skills = () => {
   return (
